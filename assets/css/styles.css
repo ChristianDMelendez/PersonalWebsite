@@ -52,9 +52,9 @@ html.dark body {
 
 /* ✅ DARK MODE BUTTON: Left-aligned & tucked under navbar */
 .dark-toggle-wrapper {
-  position: fixed;
-  top: 1.25rem;
-  right: 1.75rem; /* Adjust this if needed */
+  position: absolute;
+  top: 70px; /* Slightly below the navbar */
+  right: 2rem; /* Hugs the right side of the screen */
   z-index: 999;
 }
 
