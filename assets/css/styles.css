@@ -54,7 +54,7 @@ html.dark body {
 .dark-toggle-wrapper {
   position: absolute;
   top: 70px;
-  right: 0.5rem; /* ✅ Closer to screen edge */
+  right: 0.075rem; /* ✅ Closer to screen edge */
   z-index: 1000;
 }
 
