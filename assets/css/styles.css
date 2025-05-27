@@ -53,9 +53,22 @@ html.dark body {
 /* ✅ DARK MODE BUTTON: Left-aligned & tucked under navbar */
 .dark-toggle-wrapper {
   position: absolute;
-  top: 70px; /* Slightly below the navbar */
-  right: 2rem; /* Hugs the right side of the screen */
-  z-index: 999;
+  top: 70px;         /* Push it down just below navbar */
+  right: 2rem;       /* Keep it on the right edge */
+  z-index: 1000;
+}
+
+@media (min-width: 1400px) {
+  .dark-toggle-wrapper {
+    right: 4rem;     /* More padding for wide screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .dark-toggle-wrapper {
+    top: 80px;
+    right: 1rem;
+  }
 }
 
 #darkModeToggle {
