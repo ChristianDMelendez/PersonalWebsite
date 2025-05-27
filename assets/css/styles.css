@@ -266,3 +266,70 @@ main {
   min-height: calc(100vh - 160px);
   box-sizing: border-box;
 }
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    gap: 2rem;
+    text-align: center;
+  }
+
+  .text-area {
+    max-width: 100%;
+  }
+
+  .text-area h1 {
+    font-size: 1.8rem;
+  }
+
+  .text-area p {
+    font-size: 1rem;
+  }
+
+  .image-area img {
+    width: 90%;
+    max-width: 240px;
+    height: auto;
+  }
+
+  .about-card {
+    margin: 1rem;
+    padding: 1.5rem;
+    width: 90%;
+    text-align: center;
+  }
+
+  .about-card p {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .about-card img {
+    width: 100%;
+    max-width: 160px;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  .btn {
+    width: 100%;
+    max-width: 280px;
+  }
+}
+
+@media (max-width: 480px) {
+  .text-area h1 {
+    font-size: 1.4rem;
+  }
+
+  .text-area p,
+  .about-card p {
+    font-size: 0.95rem;
+  }
+
+  .container {
+    padding: 1rem 0.5rem;
+  }
+}
