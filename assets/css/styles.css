@@ -53,23 +53,24 @@ html.dark body {
 /* ✅ DARK MODE BUTTON: Left-aligned & tucked under navbar */
 .dark-toggle-wrapper {
   position: absolute;
-  top: 70px;         /* Push it down just below navbar */
-  right: 2rem;       /* Keep it on the right edge */
+  top: 70px;
+  right: 0.5rem; /* ✅ Closer to screen edge */
   z-index: 1000;
 }
 
 @media (min-width: 1400px) {
   .dark-toggle-wrapper {
-    right: 4rem;     /* More padding for wide screens */
+    right: 1rem; /* Just a tiny cushion for ultrawides */
   }
 }
 
 @media (max-width: 768px) {
   .dark-toggle-wrapper {
     top: 80px;
-    right: 1rem;
+    right: 0.25rem; /* Closer edge on mobile */
   }
 }
+
 
 #darkModeToggle {
   background: #000;
